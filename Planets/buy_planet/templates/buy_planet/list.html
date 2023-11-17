@@ -1,0 +1,24 @@
+{% extends 'buy_planet/common_template.html' %}
+
+
+{% block title%}Планеты{% endblock%}
+{% block content %}
+    <body>
+        <div class="center-line">
+
+            <h1>Доступные для покупки планеты</h1>
+            <hr>
+            {% for el in planets %}
+                <div class="stage">
+                    <h2>Название: {{ el.name }}</h2>
+                    <p>Категория: {{ el.cat }}</p>
+                    <p><img src="{{ el.photo.url }}" width="300" height="auto" border="20px" style="border-radius:20px;"> </p>
+                    <a href="{{ el.get_absolute_url }}">Смотреть подробно</a>
+                    <hr>
+                </div>
+            {% endfor %}
+
+        </div>
+    </body>
+{% endblock %}
+</html>

@@ -1,0 +1,18 @@
+{% extends 'buy_planet/common_template.html' %}
+
+{% block title %} {{ c.cat }}{% endblock %}
+
+{% block content %}
+        <h1> {{ с.cat }}</h1>
+    {% for object in articles %}
+
+
+        <h2>{{ object.name }}</h2>
+
+        <p><img src="{{ object.photo.url }}" width=50% height="auto" border="20px" style="border-radius:20px;"> </p>
+        <a href="{{ object.get_absolute_url }}">Смотреть подробно</a>
+
+
+    {% endfor %}
+
+{% endblock %}

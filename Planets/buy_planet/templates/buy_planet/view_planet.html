@@ -1,0 +1,17 @@
+{% extends 'buy_planet/common_template.html' %}
+
+{% block title%}{{title}}{% endblock%}
+
+{% block content %}
+    <div>
+        <h1 style="color: #2F4F4F">Планета {{ planet.name }}</h1>
+        <h1>Категория планеты: {{ planet.cat }}</h1>
+        <h2>ЦЕНА: {{ planet.price }} галактических юаней</h2>
+        <p><img src="{{ planet.photo.url }}" width=90% height="auto" border="20px" style="border-radius:20px;"> </p>
+        <h2>Описание</h2>
+        <p style="font-size: 22px">{{ planet.description }}</p>
+
+
+    </div>
+    <p><a href="{% url 'no' %}" class="btn btn-warning">Купить планету</a><a style="float: right;" href="{% url 'planets' %}" class="btn btn-warning">Назад</a></p>
+{% endblock %}

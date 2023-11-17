@@ -1,0 +1,33 @@
+{% extends 'buy_planet/common_template.html' %}
+
+{% block title%}Главная{% endblock%}
+{% block content %}
+    <body>
+        <div class="cloud">
+            <h1>Главная страница</h1>
+            <p class="about-text">Покупка и продажа новых и подержанных планет</p>
+        </div>
+        <p style="margin-left: 20%; color: #DC143C; font-size: 37px; font-style: italic; font-weight: bold;">Случайные планеты</p>
+
+
+
+        <div class="four_planets" style="margin: 5%; background: #191970; width: 40%; float: left; color: #FFFFFF; border-radius: 20px;">
+            {{ planet_1.name }}
+             <a href="{{ planet_1.get_absolute_url }}"><p><img src="{{ planet_1.photo.url }}" width=220px height=220px border="2px" style="border-radius:3px;"> </p></a>
+        </div>
+        <div class="four_planets" style="float: right;">
+            {{ planet_2.name }}
+             <a href="{{ planet_2.get_absolute_url }}"><p><img src="{{ planet_2.photo.url }}" width=220px height=220px border="2px" style="border-radius:3px;"> </p></a>
+        </div>
+        <div class="four_planets" style="float: left;">
+            {{ planet_3.name }}
+            <a href="{{ planet_3.get_absolute_url }}"><p><img src="{{ planet_3.photo.url }}" width=220px height=220px border="2px" style="border-radius:3px;"> </p></a>
+        </div>
+        <div class="four_planets" style="float: left; color: #FFFFFF; ">
+            {{ planet_4.name }}
+            <a href="{{ planet_4.get_absolute_url }}"><p><img src="{{ planet_4.photo.url }}" width=220px height=220px border="2px" style="border-radius:3px;"> </p></a>
+        </div>
+
+    </body>
+{% endblock %}
+</html>

@@ -1,0 +1,14 @@
+{% extends 'buy_planet/common_template.html' %}
+
+
+{% block title%}Покупка{% endblock%}
+
+{% block content %}
+    <h1>Кажется, вы всё-таки приняли решение!</h1>
+    {{ planet.name }}
+    <p><img src="{{ planet.photo.url }}" width="300" height="auto" border="20px" style="border-radius:20px;"> </p>
+    <p class="about-text">{{ planet.bought }}</p>
+
+
+
+{% endblock %}

@@ -1,0 +1,99 @@
+body {
+    background: #006363	;
+}
+
+.about-text {
+    color: #006363;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+aside {
+    float: left;
+    background: #33CCCC;
+    width: 28%;
+    height: 100%;
+
+    color: #006363;
+    border-right: 5px solid black;
+
+
+}
+
+aside img {
+
+    width: 40px;
+    float: left;
+    border-radius: 20px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+aside li {
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul a:hover, aside ul li:hover {
+    transform: scale(1.05);
+}
+
+body .cloud {
+    padding: 50px;
+    margin-left: 50px;
+
+body .center-line {
+    padding-left: 20%;
+    background: red;
+}
+
+}
+
+body .top-side {
+    padding-left: 10%;
+    color:  #006363;
+    background: #33CCCC;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+     text-align: center;
+
+}
+
+body .right-side {
+    padding-right: 25%;
+    background: red;
+    border-left: 5px solid black;
+    float: right;
+    min-height: 100hv;
+
+}
+
+body footer {
+
+    bottom: 0;
+    padding: 0 15px 10px;
+    border-top: 2px solid #ccc;
+    font-size: 0.9em;
+    clear: both;
+
+    background: linear-gradient(to bottom,#eee 0%,#fff 100%);
+
+}
+
+.four_planets {
+    margin: 5%;
+    background: #191970;
+    width: 40%;
+    border-radius: 20px;
+    color: #FFFFFF;
+    padding: 2%;
+}
+
